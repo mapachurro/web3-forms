@@ -1,0 +1,32 @@
+<!-- This is the index.html corresponding to the non-authenticated, "feedback" flow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web3 Forms</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Submit Feedback</h1>
+    <form id="feedback-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" required></textarea>
+
+      <label>
+        <input type="radio" name="feedback" value="positive" checked /> Upvote
+      </label>
+      <label>
+        <input type="radio" name="feedback" value="negative" /> Downvote
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script type="module" src="./js/bundle.js"></script>
+</body>
+</html>

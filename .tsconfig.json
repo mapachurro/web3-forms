@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                      
+    "module": "commonjs",                    
+    "outDir": "dist",                        
+    "rootDir": ".",                          
+    "strict": true,                         
+    "esModuleInterop": true,                 
+    "skipLibCheck": true,                    
+    "moduleResolution": "node"               
+  },
+  "include": ["backend/**/*.ts", "src/**/*.ts"], 
+  "exclude": ["node_modules", "dist"]       
+}
