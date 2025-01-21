@@ -12,15 +12,26 @@ export default {
   },
   mode: 'development',
   resolve: {
-    fallback: {
-      fs: false, // Disable `fs` for browser
-      os: 'os-browserify/browser',
+    alias: {
+      fs: '@zenfs/core',
+      'node:fs': '@zenfs/core',
+      'node:path': 'path-browserify',
       path: 'path-browserify',
       process: 'process/browser',
+      'node:process': 'process/browser',
+    },
+    fallback: {
+      os: 'os-browserify/browser',
       crypto: 'crypto-browserify',
       stream: 'stream-browserify',
     },
   },
+  externals: [
+    '@sqlite.org/sqlite-wasm',
+    'nunjucks',
+    'chokidar',
+    'arweave'
+  ],
   module: {
     rules: [
       {

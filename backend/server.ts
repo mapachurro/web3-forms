@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { Feedback } from '../schema'; // Import the schema file
+import { Item } from '@seedprotocol/sdk'; // Import the schema file
 
 const app = express();
 app.use(cors()); // Enable cross-origin requests
@@ -10,7 +10,12 @@ app.use(express.json()); // Parse JSON request bodies
 app.post('/feedback', async (req, res) => {
   try {
     const { name, comment, isPositive } = req.body;
-    const feedback = await Feedback.create({ name, comment, isPositive });
+    const feedback = await Item.create({
+      modelName: 'Feedback',
+      name, 
+      comment, 
+      isPositive 
+    });
     await feedback.publish();
     res.status(201).send({ message: 'Feedback submitted successfully!' });
   } catch (error) {

@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/mapachurro/web3-forms#readme",
   "dependencies": {
-    "@seedprotocol/sdk": "^0.2.43",
+    "@seedprotocol/sdk": "^0.2.45",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "path-browserify": "^1.0.1",
