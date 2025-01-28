@@ -1711,7 +1711,7 @@
 
 "@seedprotocol/sdk@^0.2.45":
   version "0.2.48"
-  resolved "https://registry.npmjs.org/@seedprotocol/sdk/-/sdk-0.2.48.tgz"
+  resolved "https://registry.yarnpkg.com/@seedprotocol/sdk/-/sdk-0.2.48.tgz#dee6f068e480075397e0bd2d2fd8bb907148c4c6"
   integrity sha512-OCJc0YSezUaRTPyyUyk7lDLS/OZDrPDozjon3/R2SjV1bLvlZD84DBCyz4I4pq183mjisZ016Vb/zsDJiNUOrA==
   dependencies:
     "@ethereum-attestation-service/eas-sdk" "^2.7.0"
